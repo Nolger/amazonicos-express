@@ -29,7 +29,7 @@ export default function SolicitarPage() {
         {/* Formulario de solicitud */}
         <SolicitarForm />
 
-        <Button variant="outline" className="mt-8 border-green-800 text-green-800 hover:bg-green-50" asChild>
+        <Button variant="outline" className="cursor-pointer mt-8 border-green-800 text-green-800 hover:bg-green-50" asChild>
           <Link href="/" className="flex items-center gap-2">
             <ArrowLeft size={16} />
             Volver al inicio

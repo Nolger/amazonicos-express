@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -225,20 +226,21 @@ export default function SolicitarForm() {
                   </>
                 )}
               </Button>
-
-              <Button
-                type="button"
-                variant="outline"
-                className="w-full border-green-800 text-green-800 hover:bg-green-50"
-                onClick={() => {
-                  toast({
-                    title: "Contacto con agente",
-                    description: "Un agente se pondrá en contacto contigo pronto.",
-                  })
-                }}
-              >
-                Prefiero hablar con un agente
-              </Button>
+              <Link href="https://wa.me/573214859572" className="cursor-pointer ">
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="w-full border-green-800 text-green-800 hover:bg-green-50"
+                  onClick={() => {
+                    toast({
+                      title: "Contacto con agente",
+                      description: "Un agente se pondrá en contacto contigo pronto.",
+                    })
+                  }}
+                >
+                    Prefiero hablar con un agente
+                </Button>
+              </Link> 
             </div>
           </form>
         </Form>
